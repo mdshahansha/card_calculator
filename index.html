@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JetBlue Cardculator Prototype</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,300italic,300,600italic,700,700italic' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+    <form>
+        <b>Type Location Here:</b>&nbsp;&nbsp;<input id="location" type="text" name="location" value="BOS">&nbsp;&nbsp;<br><br>
+    </form>
+
+    <form>
+        <b>Air Travel</b><br>
+
+        <input type="number" id="numberOfFlights" value="3"> Flights Taken
+        * <span id="avgflight" value="392">$392</span>
+        = <b>$<span id="flightsSpendPerYear">Total $ spent of flights</span></b>&nbsp;&nbsp;per year estimate<br><br>
+
+        per year estimate * <span id="flightsPoints">3 points</span> = <b><span id="flightsPointsPerYear"> Step 1 TrueBlue Points</span></b> &nbsp;&nbsp;Flight Points Per Year
+
+        <br><br><br>
+    </form>
+
+    <form>
+        <b>Groceries</b><br>
+
+        <input type="number" id="monthlyGroceriesSpend" value="330"> on groceries per month
+        * <span id="monthsPerYear"> 12 </span>
+        = <b>$<span id="groceriesSpendPerYear">Total spent on groceries per year</span></b>&nbsp;&nbsp;per year estimate<br><br>
+
+        per year estimate * <span id="groceriesPoints">2 points</span> = <b><span id="groceriesPointsPerYear"> Step 2 TrueBlue Points</span></b> &nbsp;&nbsp;Grocery Points Per Year
+
+        <br><br><br>
+    </form>
+
+    <form>
+        <b>Restaurants</b><br>
+
+        <input type="number" id="monthlyRestaurantsSpend" value="218"> on restaurants per month
+        * <span id="monthsPerYear"> 12 </span>
+        = <b>$<span id="restaurantsSpendPerYear">Total spent on restaurants per year</span></b>&nbsp;&nbsp;per year estimate<br><br>
+
+        per year estimate * <span id="restaurantsPoints">2 points</span> = <b><span id="restaurantsPointsPerYear"> Step 3 TrueBlue Points</span></b> &nbsp;&nbsp;Restaurant Points Per Year
+
+        <br><br><br>
+    </form>
+
+    <form>
+        <b>Total TrueBlue Points</b><br>
+
+        <span id="grandTotalPoints"></span>
+
+        <br><br><br>
+    </form>
+
+    <form>
+        <b>Deals you can get with your TrueBlue Points</b><br><br>
+
+        <div id="trip-container">
+            <div id="deal0"></div>
+            <div id="deal1"></div>
+            <div id="deal2"></div>
+            <div id="deal3"></div>
+            <div id="deal4"></div>
+            <div id="deal5"></div>
+        </div>
+
+    </form>
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="js/LatLng.js"></script>
+    <script src="js/AirportCodes.js"></script>
+	<script src="js/CardculatorApp.js"></script>
+
+</body>
+</html>
